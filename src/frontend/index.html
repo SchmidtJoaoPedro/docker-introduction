@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Frontend</title>
+<title>Title</title>
 <script>
 async function chamarAPI() {
 let resp = await fetch("http://localhost:5000/api/hello");
@@ -12,7 +12,7 @@ document.getElementById("resposta").innerText = data.mensagem;
 </head>
 <body>
 <h1>Frontend</h1>
-<button onclick="chamarAPI()">Chamar Backend</button>
+<button onclick="chamarAPI()">Search</button>
 <p id="resposta"></p>
 </body>
 </html>
