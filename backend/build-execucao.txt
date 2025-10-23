@@ -1,0 +1,4 @@
+docker build -t meu-mysql .
+docker run -d --name meu-mysql-container -p 3306:3306 meu-mysql
+docker ps
+docker exec -it meu-mysql-container mysql -uusuario -psenha meubanco

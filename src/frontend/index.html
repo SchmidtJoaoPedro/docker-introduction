@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frontend</title>
+<script>
+async function chamarAPI() {
+let resp = await fetch("http://localhost:5000/api/hello");
+let data = await resp.json();
+document.getElementById("resposta").innerText = data.mensagem;
+}
+</script>
+</head>
+<body>
+<h1>Frontend</h1>
+<button onclick="chamarAPI()">Chamar Backend</button>
+<p id="resposta"></p>
+</body>
+</html>
